@@ -5,6 +5,7 @@ import { motion } from 'motion/react';
 import { personalInfo } from '@/lib/data';
 import { Github, ExternalLink } from 'lucide-react';
 import { GitHubCalendar } from 'react-github-calendar';
+import { cn } from '@/lib/utils';
 
 export function GitHubActivity() {
   const [mounted, setMounted] = useState(false);
@@ -78,9 +79,15 @@ export function GitHubActivity() {
               </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-8 pt-10 border-t border-zinc-800">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-y-10 gap-x-4 md:gap-8 pt-10 border-t border-zinc-800">
+              {stats.map((stat, index) => (
+                <div 
+                  key={stat.label} 
+                  className={cn(
+                    "text-center",
+                    index === 2 ? "col-span-2 md:col-span-1" : "col-span-1"
+                  )}
+                >
                   <p className="text-3xl font-serif font-medium text-zinc-100 mb-2">{stat.value}</p>
                   <p className="text-sm font-mono text-zinc-400 uppercase tracking-widest">{stat.label}</p>
                 </div>
