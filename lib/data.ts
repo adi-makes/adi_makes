@@ -244,7 +244,7 @@ export const certifications = [
     ] 
   },
   { 
-    name: "Letters of recommendation", 
+    name: "Letter of Recommendation", 
     badge: "✍️", 
     links: [
       { name: "LoR_Dr_Nancy_Li_PMA", url: "https://drive.google.com/file/d/1eeMfrK2S70Y3CLB0V_O3nDYgTvcJ20pD/view?usp=sharing" }

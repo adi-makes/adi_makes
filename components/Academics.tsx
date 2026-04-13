@@ -78,7 +78,7 @@ export function Academics() {
                   <button 
                     key={cert.name} 
                     onClick={() => setSelectedCert(cert as any)}
-                    className="w-full flex items-center justify-between gap-6 p-6 md:p-8 rounded-[2rem] bg-zinc-900/30 border border-zinc-800/50 hover:border-amber-500/30 hover:bg-zinc-900/50 transition-all group cursor-pointer text-left shadow-lg"
+                    className="w-full flex items-center justify-between gap-6 p-6 md:p-8 rounded-[2rem] bg-zinc-900/40 border border-zinc-800/80 hover:border-amber-500 hover:bg-zinc-900/60 transition-all duration-300 group cursor-pointer text-left shadow-lg hover:shadow-[0_0_25px_rgba(245,158,11,0.15)] hover:scale-[1.04] active:scale-[0.96]"
                   >
                     <div className="flex items-center gap-6">
                       <span className="text-3xl group-hover:scale-110 transition-transform">{cert.badge}</span>
@@ -106,9 +106,9 @@ export function Academics() {
           >
             <button 
               onClick={() => setSelectedCert(null)}
-              className="absolute top-6 right-6 p-2 text-zinc-500 hover:text-zinc-300 transition-colors"
+              className="absolute top-4 right-4 md:top-6 md:right-6 p-4 text-zinc-500 hover:text-zinc-300 transition-all z-20 active:scale-90"
             >
-              <X className="w-5 h-5" />
+              <X className="w-6 h-6" />
             </button>
             <span className="text-7xl mb-8 block drop-shadow-lg">{selectedCert.badge}</span>
             <h4 className="text-2xl font-serif text-zinc-100 mb-8 px-4">{selectedCert.name}</h4>

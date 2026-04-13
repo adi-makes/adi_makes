@@ -93,7 +93,7 @@ export function Hero() {
           >
             <Button 
               size="lg" 
-              className="bg-amber-500 hover:bg-amber-600 text-zinc-950 font-semibold rounded-full px-6 h-10 md:px-8 md:h-12 group"
+              className="bg-amber-500 hover:bg-amber-600 text-zinc-950 font-semibold rounded-full px-6 h-10 md:px-8 md:h-12 group transition-all hover:scale-105 active:scale-95"
               onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Projects
@@ -104,14 +104,14 @@ export function Hero() {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <Button size="lg" variant="outline" className="rounded-full px-6 h-10 md:px-8 md:h-12 border-zinc-700 hover:bg-zinc-900 hover:text-zinc-100 bg-transparent transition-all">
+              <Button size="lg" variant="outline" className="rounded-full px-6 h-10 md:px-8 md:h-12 border-zinc-700 hover:bg-zinc-900 hover:text-zinc-100 bg-transparent transition-all hover:scale-[1.02] active:scale-[0.98]">
                 <FileText className="mr-2 w-4 h-4" />
                 View Resume
               </Button>
             </a>
             <Button 
               variant="ghost" 
-              className="rounded-full px-6 h-10 md:px-8 md:h-12 text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/50 transition-all"
+              className="rounded-full px-6 h-10 md:px-8 md:h-12 text-zinc-400 hover:text-zinc-100 hover:bg-zinc-900/50 transition-all hover:scale-[1.02] active:scale-[0.98]"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Me

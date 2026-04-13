@@ -24,7 +24,7 @@ export function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             <a 
               href={`mailto:${personalInfo.email}`}
-              className="flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-amber-500/50 transition-all group"
+              className="flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800/80 hover:border-amber-500 transition-all duration-300 group hover:scale-[1.04] active:scale-[0.96] hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]"
             >
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-zinc-950 transition-all">
                 <Mail className="w-6 h-6 md:w-8 md:h-8" />
@@ -34,7 +34,7 @@ export function Contact() {
             <a 
               href={`https://linkedin.com/in/${personalInfo.linkedin}`}
               target="_blank"
-              className="flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-amber-500/50 transition-all group"
+              className="flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800/80 hover:border-amber-500 transition-all duration-300 group hover:scale-[1.04] active:scale-[0.96] hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]"
             >
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-zinc-950 transition-all">
                 <Linkedin className="w-6 h-6 md:w-8 md:h-8" />
@@ -44,7 +44,7 @@ export function Contact() {
             <a 
               href={`https://github.com/${personalInfo.github}`}
               target="_blank"
-              className="flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800 hover:border-amber-500/50 transition-all group"
+              className="flex flex-col items-center gap-4 md:gap-6 p-6 md:p-10 rounded-[2.5rem] bg-zinc-900 border border-zinc-800/80 hover:border-amber-500 transition-all duration-300 group hover:scale-[1.04] active:scale-[0.96] hover:shadow-[0_0_30px_rgba(245,158,11,0.1)]"
             >
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-amber-500/10 flex items-center justify-center group-hover:bg-amber-500 group-hover:text-zinc-950 transition-all">
                 <Github className="w-6 h-6 md:w-8 md:h-8" />

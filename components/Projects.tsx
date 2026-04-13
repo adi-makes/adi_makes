@@ -31,7 +31,7 @@ export function Projects() {
                 <TabsTrigger 
                   key={tab} 
                   value={tab}
-                  className="rounded-full px-6 text-zinc-400 data-[active]:bg-amber-500 data-[active]:text-zinc-950 hover:text-zinc-100 transition-all"
+                  className="rounded-full px-6 text-zinc-400 data-[active]:bg-amber-500 data-[active]:text-zinc-950 hover:text-zinc-100 transition-all hover:scale-105 active:scale-95"
                 >
                   {tab}
                 </TabsTrigger>
@@ -51,7 +51,7 @@ export function Projects() {
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 className={cn(
-                  "group relative flex flex-col glass rounded-[2.5rem] overflow-hidden hover:border-amber-500/50 transition-all duration-500",
+                  "group relative flex flex-col glass rounded-[2.5rem] overflow-hidden hover:border-amber-500/50 transition-all duration-500 hover:scale-[1.01] active:scale-[0.99] hover:shadow-2xl hover:shadow-amber-500/5",
                   project.featured ? "lg:col-span-2" : ""
                 )}
               >
