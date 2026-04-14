@@ -107,6 +107,10 @@ export const metadata: Metadata = {
   },
 
   category: 'technology',
+
+  verification: {
+    google: '7YzRrKVMNLry9-6vw35v1SprlEbRK96nN7y7GKVPxY4',
+  },
 };
 
 const jsonLd = {
