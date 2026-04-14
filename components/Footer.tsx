@@ -12,7 +12,7 @@ export function Footer() {
     <footer className="py-12 px-6 border-t border-zinc-900">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex flex-col items-center md:items-start gap-2">
-          <p className="text-sm font-medium text-zinc-300">
+          <p className="text-sm font-medium text-zinc-300 text-center">
             Built by <span className="font-name italic text-amber-400 text-xl md:text-2xl ml-1">{personalInfo.name}</span>
             <span className="block mt-1 text-zinc-500">(adi-makes)</span>
           </p>
