@@ -123,8 +123,25 @@ const Particles: React.FC<ParticlesProps> = ({
     const container = containerRef.current;
     if (!container) return;
 
-    const renderer = new Renderer({ dpr: pixelRatio, depth: false, alpha: true });
-    const gl = renderer.gl;
+    let renderer: Renderer;
+    let gl: any;
+    try {
+      renderer = new Renderer({ dpr: pixelRatio, depth: false, alpha: true });
+      gl = renderer.gl;
+      if (!gl || !gl.canvas) return;
+    } catch (e) {
+      console.warn('WebGL context creation failed or WebGL is unsupported:', e);
+      return;
+    }
+
+    let isContextLost = false;
+    const handleContextLost = (e: Event) => {
+      e.preventDefault();
+      isContextLost = true;
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
+    };
+    gl.canvas.addEventListener('webglcontextlost', handleContextLost, false);
+
     container.appendChild(gl.canvas);
     gl.clearColor(0, 0, 0, 0);
 
@@ -132,6 +149,7 @@ const Particles: React.FC<ParticlesProps> = ({
     camera.position.set(0, 0, cameraDistance);
 
     const resize = () => {
+      if (isContextLost || !container) return;
       const width = container.clientWidth;
       const height = container.clientHeight;
       renderer.setSize(width, height);
@@ -199,6 +217,7 @@ const Particles: React.FC<ParticlesProps> = ({
     let elapsed = 0;
 
     const update = (t: number) => {
+      if (isContextLost || (gl.isContextLost && gl.isContextLost())) return;
       animationFrameId = requestAnimationFrame(update);
       const delta = t - lastTime;
       lastTime = t;
@@ -230,9 +249,18 @@ const Particles: React.FC<ParticlesProps> = ({
       if (moveParticlesOnHover) {
         container.removeEventListener('mousemove', handleMouseMove);
       }
-      cancelAnimationFrame(animationFrameId);
-      if (container.contains(gl.canvas)) {
+      if (gl?.canvas) {
+        gl.canvas.removeEventListener('webglcontextlost', handleContextLost);
+      }
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+      if (gl?.canvas && container.contains(gl.canvas)) {
         container.removeChild(gl.canvas);
+      }
+      const loseContext = gl?.getExtension?.('WEBGL_lose_context');
+      if (loseContext) {
+        loseContext.loseContext();
       }
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
