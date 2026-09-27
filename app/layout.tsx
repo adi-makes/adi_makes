@@ -34,12 +34,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
 
   title: {
-    default: 'Adith R. Lal — Frontend Engineer & AI Builder',
+    default: 'Adith R. Lal — Software Engineer & AI Builder',
     template: '%s | Adith R. Lal',
   },
 
   description:
-    'Portfolio of Adith R. Lal (Adith), a Computer Science student at CUSAT, Kochi. Frontend Engineer, AI Builder & Product Thinker — building AI-powered products at the intersection of design and intelligence.',
+    'Portfolio of Adith R. Lal, a Computer Science student at CUSAT building full-stack applications, AI-powered systems, developer tools, and production web products.',
 
   keywords: [
     'Adith',
@@ -49,13 +49,15 @@ export const metadata: Metadata = {
     'Adith CUSAT',
     'Adith portfolio',
     'adi-makes',
-    'Frontend Engineer Kerala',
+    'Software Engineer Kerala',
+    'Full-Stack Developer India',
     'AI Builder India',
     'CUSAT Computer Science',
     'Next.js developer India',
     'React developer Kochi',
     'AI developer student',
     'HouSmart developer',
+    'InstaDummyTicketLive',
     'adithr747',
   ],
 
@@ -84,24 +86,24 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     url: SITE_URL,
     siteName: 'Adith R. Lal',
-    title: 'Adith R. Lal — Frontend Engineer & AI Builder',
+    title: 'Adith R. Lal — Software Engineer & AI Builder',
     description:
-      'Portfolio of Adith R. Lal (Adith), Frontend Engineer & AI Builder based in Kochi, India. B.Tech CS at CUSAT · 9.69 CGPA · 10+ Hackathons.',
+      'Portfolio of Adith R. Lal, Software Engineer & AI Builder based in Kochi, India. B.Tech CS at CUSAT (Honours in ML) · 9.74 CGPA · 10+ Projects.',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Adith R. Lal — Frontend Engineer & AI Builder',
+        alt: 'Adith R. Lal — Software Engineer & AI Builder',
       },
     ],
   },
 
   twitter: {
     card: 'summary_large_image',
-    title: 'Adith R. Lal — Frontend Engineer & AI Builder',
+    title: 'Adith R. Lal — Software Engineer & AI Builder',
     description:
-      'Portfolio of Adith R. Lal (Adith), Frontend Engineer & AI Builder based in Kochi, India.',
+      'Portfolio of Adith R. Lal, Software Engineer & AI Builder based in Kochi, India.',
     images: ['/og-image.png'],
     creator: '@adi_makes',
   },
@@ -120,9 +122,9 @@ const jsonLd = {
   alternateName: ['Adith', 'Adith Lal', 'Adith R Lal'],
   url: 'https://adi-makes.vercel.app',
   email: 'adithr747@gmail.com',
-  jobTitle: 'Frontend Engineer & AI Builder',
+  jobTitle: 'Software Engineer & AI Builder',
   description:
-    'Computer Science student at CUSAT, Kerala, India. Building AI-powered products at the intersection of frontend engineering and intelligence.',
+    'Computer Science student at CUSAT, Kerala, India. Building full-stack applications, AI-powered systems, and production web products.',
   alumniOf: [
     {
       '@type': 'CollegeOrUniversity',
@@ -141,11 +143,14 @@ const jsonLd = {
     'https://linkedin.com/in/adith-r-lal',
   ],
   knowsAbout: [
-    'Frontend Engineering',
+    'Software Engineering',
+    'Full-Stack Web Development',
     'Artificial Intelligence',
+    'REST APIs',
     'Next.js',
     'React',
     'TypeScript',
+    'Python',
     'Machine Learning',
     'LLM Integration',
   ],

@@ -81,13 +81,20 @@ export function Projects() {
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-3 mb-10">
+                  <div className="flex flex-wrap gap-3 mb-6">
                     {project.techStack.map((tech) => (
                       <span key={tech} className="text-sm font-mono text-zinc-400 border border-zinc-800/80 px-3 py-1 rounded-lg bg-zinc-900/40">
                         {tech}
                       </span>
                     ))}
                   </div>
+
+                  {(project as any).metrics && (
+                    <div className="mb-6 inline-flex items-center gap-2 font-mono text-xs text-amber-400/90 bg-amber-500/10 border border-amber-500/20 px-3.5 py-1.5 rounded-full self-start">
+                      <span>⚡</span>
+                      <span>{(project as any).metrics}</span>
+                    </div>
+                  )}
 
                   {(project.githubUrl || (project as any).openLinkUrl || (project as any).caseStudyUrl) && (
                     <div className="flex items-center justify-between pt-6 border-t border-zinc-900">

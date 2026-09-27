@@ -31,8 +31,8 @@ export function About() {
 
           <div className="flex flex-wrap items-center gap-8 pt-10 border-t border-zinc-900">
             <div className="flex items-center gap-3 text-base text-zinc-400">
-              <span className="font-medium text-zinc-200">Currently:</span>
-              <span className="text-zinc-300">Deep in AI/ML engineering and LLM integration</span>
+              <span className="font-medium text-zinc-200">Focus:</span>
+              <span className="text-zinc-300">Full-Stack Web, AI/ML Engineering & Cross-Platform Mobile</span>
             </div>
             <div className="flex items-center gap-6 ml-auto">
               <div className="flex items-center gap-3 text-sm text-zinc-500">
