@@ -16,7 +16,12 @@ import {
   Cloud,
   Figma,
   Box,
-  Printer
+  Printer,
+  TrendingUp,
+  FileText as FileIcon,
+  Medal,
+  Trophy,
+  Rocket
 } from "lucide-react";
 // @ts-ignore
 import hsLogo from '../assets/housmartLogo.svg';
@@ -45,7 +50,7 @@ export const personalInfo = {
   email: "adithr747@gmail.com",
   github: "adi-makes",
   linkedin: "adith-r-lal",
-  resumeUrl: "https://drive.google.com/file/d/1_DzH5r8RhxZ3iY7oElvnijdiT1QZy_nj/view?usp=drive_link",
+  resumeUrl: "https://drive.google.com/file/d/1v--PHqlttUB6dABBcE7TNr7EBmyPP-O8/view?usp=sharing",
   stats: [
     { label: "Software Internships", value: "3+" },
     { label: "Hackathons", value: "10+" },
@@ -349,27 +354,34 @@ export const certifications = [
 
 export const achievements = [
   {
-    icon: "⚡",
+    icon: Zap,
     title: "Tech Lead — ACES CUSAT",
     context: "Leading technical events, hackathons, and web platforms for ACES CUSAT",
   },
   {
-    icon: "📈",
+    icon: TrendingUp,
     title: "9.74 CGPA",
     context: "Top academic performance in B.Tech CSE (Honours in ML)",
   },
   {
-    icon: "🥈",
-    title: "2nd Place — GDG on Campus Hackathon",
+    icon: FileIcon,
+    title: "2nd Best Paper — National Student Conference on Trends in Computing 2026",
+    context: 'Research Paper: "A Novel Deep Learning Framework for Malpractice Detection During Online Examination"',
+    linkUrl: "https://drive.google.com/file/d/1MDoNv8Q4_CPWV3cUyH8VSgog2hd40_S_/view?usp=sharing",
+    linkText: "View Paper",
+  },
+  {
+    icon: Medal,
+    title: "3rd Place — GDG on Campus Hackathon",
     context: "TechSprint, CUSAT",
   },
   {
-    icon: "🏆",
+    icon: Trophy,
     title: "10+ Hackathons Participated",
     context: "Shipped AI & web software under time pressure",
   },
   {
-    icon: "🚀",
+    icon: Rocket,
     title: "10+ Software Projects Built",
     context: "Production web apps, AI tools, and full-stack platforms",
   },

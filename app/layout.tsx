@@ -170,7 +170,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body suppressHydrationWarning className="bg-zinc-950 text-zinc-50 antialiased selection:bg-amber-500/30 selection:text-amber-200 min-h-screen relative overflow-x-hidden">
         <div className="fixed inset-0 z-[-1] pointer-events-none opacity-40">
           <Particles 
-            particleCount={250}
+            particleCount={80}
             particleSpread={12}
             speed={0.1}
             particleColors={['#f59e0b', '#d97706', '#fbbf24', '#ffffff']}

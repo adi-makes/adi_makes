@@ -102,7 +102,7 @@ const fragment = /* glsl */ `
 `;
 
 const Particles: React.FC<ParticlesProps> = ({
-  particleCount = 200,
+  particleCount = 80,
   particleSpread = 10,
   speed = 0.1,
   particleColors,
@@ -319,7 +319,7 @@ const Particles: React.FC<ParticlesProps> = ({
       };
 
       const particles2d: Particle2D[] = [];
-      const count = Math.min(particleCount, 150);
+      const count = Math.min(particleCount, 50);
 
       for (let i = 0; i < count; i++) {
         const radius = (Math.random() * 2.5 + 1.2) * (particleBaseSize / 100);
