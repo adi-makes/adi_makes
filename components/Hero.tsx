@@ -100,7 +100,7 @@ export function Hero() {
               <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
             <a 
-              href="https://drive.google.com/file/d/1ALa7RmOnOQiQbKxW0NS88_GqfjYKjSHX/view?usp=sharing" 
+              href={personalInfo.resumeUrl} 
               target="_blank" 
               rel="noopener noreferrer"
             >

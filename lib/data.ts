@@ -45,6 +45,7 @@ export const personalInfo = {
   email: "adithr747@gmail.com",
   github: "adi-makes",
   linkedin: "adith-r-lal",
+  resumeUrl: "https://drive.google.com/file/d/1_DzH5r8RhxZ3iY7oElvnijdiT1QZy_nj/view?usp=drive_link",
   stats: [
     { label: "Software Internships", value: "3+" },
     { label: "Hackathons", value: "10+" },
